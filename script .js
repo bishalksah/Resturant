@@ -1,4 +1,4 @@
-<script>
+
 function toggleMenu(){
     document.getElementById("nav-links").classList.toggle("active");
 }
@@ -22,4 +22,3 @@ function filterMenu(category){
         }
     });
 }
-</script>
