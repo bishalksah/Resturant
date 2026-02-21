@@ -1,1 +1,81 @@
-<p> my name is bishal </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Bites Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h1>Urban Bites</h1>
+    <ul id="nav-links">
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h2>Delicious Food, Delivered Fresh</h2>
+        <button onclick="scrollToMenu()">Explore Menu</button>
+    </div>
+</section>
+
+<section class="section" id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="filter-buttons">
+        <button onclick="filterMenu('all')" class="active">All</button>
+        <button onclick="filterMenu('veg')">Veg</button>
+        <button onclick="filterMenu('nonveg')">Non-Veg</button>
+        <button onclick="filterMenu('drinks')">Drinks</button>
+    </div>
+
+    <div class="menu-items">
+
+        <div class="card" data-category="veg">
+            <h3>Paneer Tikka</h3>
+            <p class="price">₹299</p>
+        </div>
+
+        <div class="card" data-category="nonveg">
+            <h3>Chicken Biryani</h3>
+            <p class="price">₹399</p>
+        </div>
+
+        <div class="card" data-category="veg">
+            <h3>Veg Burger</h3>
+            <p class="price">₹199</p>
+        </div>
+
+        <div class="card" data-category="nonveg">
+            <h3>Grilled Fish</h3>
+            <p class="price">₹499</p>
+        </div>
+
+        <div class="card" data-category="drinks">
+            <h3>Mojito</h3>
+            <p class="price">₹149</p>
+        </div>
+
+        <div class="card" data-category="drinks">
+            <h3>Cold Coffee</h3>
+            <p class="price">₹129</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Urban Bites Restaurant | Designed with ❤️ by Vshal
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
